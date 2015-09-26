@@ -24,7 +24,12 @@ module.exports = function(config) {
     plugins: [
       require("karma-webpack"),
       require("karma-mocha"),
-      require("karma-sinon-chai")
+      require("karma-sinon-chai"),
+      require("karma-chrome-launcher")
+    ],
+
+    browsers: [
+      'Chrome'
     ]
 
   });
